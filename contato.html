@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+   
+</head>
+<body>
     <header class="hero-header">
         <div class="hero-content">
             <h1>Fale conosco</h1>
@@ -20,78 +22,82 @@
                 </ul>
             </nav>
     </header>
+    <main>
+        <div class="container">
+        
+            <section>
+                <h1 style="display: flex; align-items: center; justify-content: space-between;">
+                    Cadastro:
+                </h1>
+            </section>
     
-</head>
-<body>
-    <div class="container">
-        
-        <section>
-            <h1 style="display: flex; align-items: center; justify-content: space-between;">
-                Cadastro:
-            </h1>
-        </section>
+            <section class="contato">
+    
+                <fieldset>
+                    <legend>Contato:</legend>
+                    <input type="text" placeholder="Nome completo">
+                </fieldset>
+    
+            </section>
+            
+            <section class="telefone">
+    
+                <fieldset>
+                    <legend>Telefone:</legend>
+                    <input type="telphone" placeholder="(XX)XXXXX-XXXX">
+                </fieldset>
+    
+            </section>
+    
+            <section class="email">
+    
+                <fieldset>
+                    <legend>E-mail:</legend>
+                    <input type="email" placeholder="E-mail">
+                </fieldset>
+    
+            </section>
+    
+            <section class="checkbox">
+    
+                <fieldset>
+                    <legend>Quais cursos você tem interesse:</legend>
+                    <label><input type="checkbox"> HTML</label>
+                    <label><input type="checkbox"> CSS</label>
+                    <label><input type="checkbox"> JavaScript</label>
+                </fieldset>
+    
+            </section>
+            
+            <section class="bloco">
+                <fieldset>
+                    <legend>Forma de Pagamento:</legend>
+    
+                <label>
+                    <input type="radio" name="forma de pagamento">
+                    Pix
+                </label>
+    
+                <label>
+                    <input type="radio" name="forma de pagamento">
+                    Cartão de Crédito / Débito
+                </label>
+    
+                <label>
+                    <input type="radio" name="forma de pagamento">
+                    Dinheiro
+                </label>
+                </fieldset>
+            </section>
+    
+            <a href="#" class="btn">EFETUAR MATRÍCULA</a>
+                    
+        </div>
 
-        <section class="contato">
-
-            <fieldset>
-                <legend>Contato:</legend>
-                <input type="text" placeholder="Nome completo">
-            </fieldset>
-
-        </section>
-        
-        <section class="telefone">
-
-            <fieldset>
-                <legend>Telefone:</legend>
-                <input type="telphone" placeholder="(XX)XXXXX-XXXX">
-            </fieldset>
-
-        </section>
-
-        <section class="email">
-
-            <fieldset>
-                <legend>E-mail:</legend>
-                <input type="email" placeholder="E-mail">
-            </fieldset>
-
-        </section>
-
-        <section class="checkbox">
-
-            <fieldset>
-                <legend>Quais cursos você tem interesse:</legend>
-                <label><input type="checkbox"> HTML</label>
-                <label><input type="checkbox"> CSS</label>
-                <label><input type="checkbox"> JavaScript</label>
-            </fieldset>
-
-        </section>
-        
-        <section class="bloco">
-            <fieldset>
-                <legend>Forma de Pagamento:</legend>
-
-            <label>
-                <input type="radio" name="forma de pagamento">
-                Pix
-            </label>
-
-            <label>
-                <input type="radio" name="forma de pagamento">
-                Cartão de Crédito / Débito
-            </label>
-
-            <label>
-                <input type="radio" name="forma de pagamento">
-                Dinheiro
-            </label>
-            </fieldset>
-        </section>
-
-        <a href="#" class="btn">COMEÇAR AGORA</a>
-                
-    </div>
+    </main>
+    <footer>
+        <p>JEL Tech 2026 - Todos os direitos reservados.</p>
+    </footer>
+    
 </body>
 </html>
