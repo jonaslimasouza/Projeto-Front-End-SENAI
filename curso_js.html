@@ -3,71 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium&display=swap" rel="stylesheet">
-
-    <header class="hero-header">
-        <div class="hero-content">
-            <span class="tag">CURSO COMPLETO 2026</span>
-            <h1>Domine o JavaScript Moderno</h1>
-            <p class="subtitle">Do zero ao Fullstack: a linguagem que move a internet.</p>
-            <a href="#" class="btn-primary">COMECE AGORA</a>
-        </div>
-    </header>
-    <style>
-    /* CSS: Os comandos que criam o destaque */
-    .hero-header {
-        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                    url('https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&q=80&w=1000');
-        background-size: cover;
-        background-position: center;
-        padding: 80px 20px;
-        text-align: center;
-        border-radius: 12px 12px 0 0;
-        border-bottom: 4px solid var(--primary);
-    }
-    
-    .tag {
-        background: var(--primary);
-        color: #000;
-        padding: 5px 15px;
-        font-size: 0.8rem;
-        font-weight: bold;
-        border-radius: 50px;
-        letter-spacing: 1px;
-    }
-    
-    .hero-header h1 {
-        font-size: 3.5rem;
-        color: #fff;
-        margin: 20px 0;
-        text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
-    }
-    
-    .btn-primary {
-        background: var(--primary);
-        color: #000;
-        padding: 15px 40px;
-        text-decoration: none;
-        font-weight: bold;
-        border-radius: 5px;
-        display: inline-block;
-        margin-top: 20px;
-        box-shadow: 0 5px 15px rgba(247, 223, 30, 0.3);
-    }
-    </style>
-    
+    <title>Curso de JavaScript Moderno</title>
     <style>
         :root {
-            --primary: #f7df1e;
+            --primary: #f7df1e; /* Amarelo JS */
             --secondary: #323330;
             --accent: #007acc;
             --bg: #121212;
             --text: #e0e0e0;
         }
 
-        /* Aplicando Oxanium apenas ao corpo */
         body {
-            font-family: "Oxanium", sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg);
             color: var(--text);
             line-height: 1.6;
@@ -95,6 +42,13 @@
             font-style: italic;
             color: #aaa;
             margin-bottom: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--accent);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 40px;
         }
 
         ul {
@@ -143,80 +97,74 @@
             text-decoration: none;
             font-weight: bold;
             border-radius: 5px;
+            font-size: 1.2rem;
             transition: transform 0.2s;
         }
 
         .btn:hover {
             transform: scale(1.05);
         }
+
+        hr { border: 0; border-top: 1px solid #333; margin: 40px 0; }
     </style>
 </head>
 <body>
-    <div class="container">
+
+<div class="container">
+    <header>
+        <h1>Domine o JavaScript Moderno</h1>
+        <p class="subtitle">Do zero ao Fullstack: crie aplicações reais com a linguagem que move a internet.</p>
+    </header>
+
+    <section>
+        <h2>Sobre o Curso</h2>
+        <p>Deixe de apenas copiar e colar scripts. Este curso foi desenhado para quem deseja entender a <strong>lógica profunda</strong> do JavaScript. Vamos navegar desde a sintaxe básica até o gerenciamento complexo de estados e APIs assíncronas.</p>
         
-        <section>
-            <h1 style="display: flex; align-items: center; justify-content: space-between;">
-                JavaScript
-                <img src="https://static.vecteezy.com/system/resources/previews/027/127/560/large_2x/javascript-logo-javascript-icon-transparent-free-png.png" 
-                     alt="Logo JavaScript" 
-                     style="height: 55px; border-radius: 4px; box-shadow: 2px 2px 10px rgba(0,0,0,0.7);">
-            </h1>
-            <h2>Sobre a Linguagem JavaScript</h2>
-            <p>O JavaScript é uma linguagem de programação voltada à interatividade e dinamismo das páginas web.<br> Sua principal função é permitir que elementos da interface reajam às ações do usuário, como cliques, preenchimento de formulários, animações, validações e atualizações de conteúdo em tempo real.</p>
-            <h2>Origem e Evolução</h2>
-            <p>O JavaScript foi criado em 1995 por Brendan Eich, inicialmente para tornar as páginas web mais interativas. Com o passar dos anos, a linguagem evoluiu significativamente e deixou de ser restrita ao navegador, passando também a ser utilizada no desenvolvimento de aplicações completas, servidores e até aplicativos móveis.</p>
-            <p>Atualmente, o JavaScript é padronizado pela especificação ECMAScript, que garante sua evolução contínua e compatibilidade entre navegadores.</p>
-            <h2>Base de Código e Funcionamento</h2>
-            <p>O JavaScript utiliza uma sintaxe simples e flexível, baseada em scripts que são interpretados pelo navegador. Ele pode manipular diretamente o DOM (Document Object Model), permitindo alterar elementos HTML e estilos CSS de forma dinâmica, sem a necessidade de recarregar a página.</p>
-            <p>A linguagem é baseada em eventos, o que significa que grande parte do seu funcionamento depende de ações realizadas pelo usuário ou pelo próprio sistema, como carregamento da página, cliques ou envios de dados.</p>
-            <h2>Papel no Desenvolvimento Front-End</h2>
-            <p>No desenvolvimento front-end, o JavaScript é responsável por transformar páginas estáticas em experiências interativas e responsivas. Ele atua em conjunto com HTML e CSS, adicionando lógica, comportamento e comunicação com servidores por meio de requisições assíncronas.</p>
-            <p>Frameworks e bibliotecas modernas ampliam ainda mais suas possibilidades, permitindo a criação de aplicações web robustas, rápidas e escaláveis.</p>
-            <h2>Importância do JavaScript</h2>
-            <P>O JavaScript é uma das linguagens mais utilizadas no mundo e essencial para o desenvolvimento web moderno. Sua versatilidade, ampla comunidade e integração com diversas tecnologias fazem dele uma ferramenta indispensável para desenvolvedores que desejam criar interfaces ricas, funcionais e alinhadas às necessidades atuais da web.</P>
-        </section>
+        
+    </section>
 
-        <section>
-            <h2>O que você vai aprender?</h2>
-            <ul>
-                <li><strong>Lógica e Sintaxe:</strong> Variáveis, loops e funções de alta ordem.</li>
-                <li><strong>Manipulação do DOM:</strong> Controle total sobre elementos HTML e eventos.</li>
-                <li><strong>Modern JS (ES6+):</strong> Arrow functions, Destructuring e Modules.</li>
-                <li><strong>Assincronismo:</strong> Domine Promises e Async/Await.</li>
-            </ul>
-        </section>
+    <section>
+        <h2>O que você vai aprender?</h2>
+        <ul>
+            <li><strong>Lógica e Sintaxe:</strong> Variáveis, loops e funções de alta ordem.</li>
+            <li><strong>Manipulação do DOM:</strong> Controle total sobre elementos HTML e eventos.</li>
+            <li><strong>Modern JS (ES6+):</strong> Arrow functions, Destructuring e Modules.</li>
+            <li><strong>Assincronismo:</strong> Domine Promises e Async/Await para lidar com dados externos.</li>
+        </ul>
+    </section>
 
-        <section>
-            <h2>Para quem é?</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Perfil</th>
-                        <th>Objetivo</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Iniciantes</td>
-                        <td>Entrar no mercado de tecnologia.</td>
-                    </tr>
-                    <tr>
-                        <td>Designers</td>
-                        <td>Criar interfaces interativas e dinâmicas.</td>
-                    </tr>
-                    <tr>
-                        <td>Devs Back-end</td>
-                        <td>Migrar para o desenvolvimento Fullstack.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+    <section>
+        <h2>Para quem é?</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Perfil</th>
+                    <th>Objetivo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Iniciantes</td>
+                    <td>Entrar no mercado de tecnologia.</td>
+                </tr>
+                <tr>
+                    <td>Designers</td>
+                    <td>Criar interfaces interativas e dinâmicas.</td>
+                </tr>
+                <tr>
+                    <td>Devs Back-end</td>
+                    <td>Migrar para o desenvolvimento Fullstack.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <div class="cta-box">
-            <h3>Pronto para transformar sua carreira?</h3>
-            <p>Garanta sua vaga hoje com 30% de desconto!</p>
-            <a href="#" class="btn">QUERO ME INSCREVER AGORA</a>
-        </div>
+    <div class="cta-box">
+        <h3>Pronto para transformar sua carreira?</h3>
+        <p>Garanta sua vaga hoje com 30% de desconto!</p>
+        <a href="#" class="btn">QUERO ME INSCREVER AGORA</a>
     </div>
+</div>
+
 </body>
 </html>
