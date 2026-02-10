@@ -67,7 +67,7 @@
 
     /* RESET E ESTILOS GERAIS: Ajustes básicos para o corpo da página */
     body {
-        font-family: 'Segoe UI', Arial, sans-serif;
+        font-family: "Oxanium",  Arial, sans-serif;
         background-color: var(--bg); /* Usa a variável de cor definida acima */
         color: var(--text);
         line-height: 1.6; /* Melhora a leitura aumentando o espaço entre linhas */
