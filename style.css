@@ -9,7 +9,7 @@
     background-size: cover;       /* Faz a imagem cobrir todo o espaço */
     background-position: center;  /* Centraliza a imagem */
     padding: 80px 20px;           /* Dá "respiro" (espaço) em cima e embaixo */
-    text-align: left;           /* Centraliza os textos */
+    text-align: center;           /* Centraliza os textos */
     border-radius: 12px 12px 0 0; /* Arredonda apenas as quinas de cima */
     border-bottom: 4px solid var(--primary); /* Linha amarela de destaque */
 }
