@@ -179,7 +179,7 @@
         flex-direction: row;
         justify-content: center;
     }
-    /* links da página */
+    /* LINKS DA PAGINA */
     a{
         color: #fff; 
     }
@@ -222,6 +222,8 @@
 
     }.valores{
         text-align: justify;
+
+    /* RODAPÉ */
         
     }footer{
         text-align: center;
