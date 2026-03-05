@@ -5,9 +5,12 @@ function inscrever() {
 const cepInput = document.getElementById("cep");
 
 // quando o usuário sair do campo CEP
-cepInput.addEventListener("blur", function() {
+cepInput.addEventListener("input", function() {
 
-    let cep = cepInput.value.replace("-", "");
+    let cep = cepInput.value.replace(/\D/g, "";
+
+     // só busca quando tiver 8 números
+     if (cep.length === 8) {
 
     let url = "https://viacep.com.br/ws/" + cep + "/json/";
 
@@ -17,6 +20,14 @@ cepInput.addEventListener("blur", function() {
     })
     .then(function(dados){
 
+
+            // se o CEP não existir
+            if(dados.erro){
+                alert("CEP não encontrado");
+                return;
+
+    }
+
         // coloca os dados dentro dos inputs do HTML
         document.getElementById("rua").value = dados.logradouro;
         document.getElementById("bairro").value = dados.bairro;
@@ -24,9 +35,11 @@ cepInput.addEventListener("blur", function() {
         document.getElementById("estado").value = dados.uf;
 
     })
-    //Catch evitar que o site quebre caso algo dê errado ao buscar o CEP.
+        //Catch evitar que o site quebre caso algo dê errado ao buscar o CEP.
     .catch(function(){
         alert("Erro ao buscar CEP");
     });
 
-});
+}
+
+});  
