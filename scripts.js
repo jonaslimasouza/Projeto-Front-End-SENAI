@@ -7,7 +7,7 @@ const cepInput = document.getElementById("cep");
 // quando o usuário sair do campo CEP
 cepInput.addEventListener("input", function() {
 
-    let cep = cepInput.value.replace(/\D/g, "";
+    let cep = cepInput.value.replace(/\D/g, "");
 
      // só busca quando tiver 8 números
      if (cep.length === 8) {
