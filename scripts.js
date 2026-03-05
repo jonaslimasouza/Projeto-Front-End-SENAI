@@ -14,6 +14,9 @@ cepInput.addEventListener("input", function() {
 
     let url = "https://viacep.com.br/ws/" + cep + "/json/";
 
+
+    //fetch(): faz uma requisição para a API do ViaCEP e retorna os dados do endereço em JSON para preencher o formulário.
+    
     fetch(url)
     .then(function(resposta){
         return resposta.json();
