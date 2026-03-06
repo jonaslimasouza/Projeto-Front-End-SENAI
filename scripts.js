@@ -1,6 +1,12 @@
 function inscrever() {
-    confirm("Deseja realmente se inscrever?")
-    alert("Matrícula Efetuada com Sucesso!");
+    let confirmacao = confirm("Deseja realmente se inscrever?")
+    if (confirmacao === true) {
+        alert("Matrícula Efetuada com Sucesso!");
+
+    }else {
+        alert("Matrícula Cancelada!");
+    }
+    
 }
 
 const cepInput = document.getElementById("cep");
