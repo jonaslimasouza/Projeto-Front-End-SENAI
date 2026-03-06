@@ -1,4 +1,5 @@
 function inscrever() {
+    confirm("Deseja realmente se inscrever?")
     alert("Matrícula Efetuada com Sucesso!");
 }
 
