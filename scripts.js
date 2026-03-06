@@ -1,6 +1,9 @@
 function inscrever() {
-    alert("Matrícula Efetuada com Sucesso!");
-}
+    document.getElementById("rua").value = dados.logradouro;
+    document.getElementById("bairro").value = dados.bairro;
+    document.getElementById("cidade").value = dados.localidade;
+    document.getElementById("estado").value = dados.uf;
+    
 
 const cepInput = document.getElementById("cep");
 
@@ -32,10 +35,7 @@ cepInput.addEventListener("input", function() {
     }
 
         // coloca os dados dentro dos inputs do HTML
-        document.getElementById("rua").value = dados.logradouro;
-        document.getElementById("bairro").value = dados.bairro;
-        document.getElementById("cidade").value = dados.localidade;
-        document.getElementById("estado").value = dados.uf;
+        
 
     })
         //Catch evitar que o site quebre caso algo dê errado ao buscar o CEP.
